@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Intro a JavaScript</title>
+		<script>
+		/*
+			// *** Concatenación de cademas
+			document.write("<h1>Hola Mundo</h1>" + "texto2");
+			document.write("<h1>Hola Mundo</h1>" + 55);
+			document.write(5 + 4);
+			
+			// *** Varibales
+			var nombre = "Mariana";
+			var suma = 3 + 2;
+			document.write(nombre);
+			document.write(suma);
+			
+			//var usuario = prompt("Escribe tu Nombre:");
+			//document.write(usuario);
+			
+			*/
+			
+			
+			/***** FUNCIÓN 1
+			function suma(a,b){
+				var resultado = a + b;
+				document.write(resultado);
+			}
+			*/
+			
+			
+			
+			/***** FUNCIÓN 2
+			function suma(a,b){
+				var resultado = a + b;
+				return resultado;
+			}
+			
+			var resultado = suma(5,7);
+			document.write(resultado);			
+			*/
+			
+			
+			
+			/***** FUNCIÓN 3
+
+			var suma = function suma(a,b){
+				var resultado = a + b;
+				return resultado;
+			};
+			
+			var resultado = suma(5,7);
+			document.write(resultado);			 
+			*/
+			
+			
+			// **** FUNCIONES ANONIMAS
+			var suma = function (a,b){
+				var resultado = a + b;
+				return resultado;
+			};
+			
+			
+			function operacion(miFuncion,a,b){
+				return miFuncion(a,b);
+			}
+			
+			// var resultado = operacion(suma,5,7);
+			var resultado = operacion(function (a,b){
+				var resultado = a*b;
+				return resultado;
+			},5,7);
+			document.write(resultado);			 
+			
+			// *** OBJETOS
+			var persona = {
+				nombre:"mariana",
+				edad:28,
+				hablar:function(){
+					document.write("hola");
+				}
+			};
+			
+			document.write(persona.nombre);
+			persona.hablar();
+			
+			
+		</script>
+	</head>
+	<body>
+		<!-- nada por ahora en el body -->
+	</body>
+</html>

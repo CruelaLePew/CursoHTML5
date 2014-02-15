@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<!-- esto es para utf-8 -->
+		<meta charset="utf-8"/>
+		<title>Mi pagina</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+		<link href="../imagenes/chela.png" rel="shortcut icon"/>
+		<link href="../css/normalize.css" rel="stylesheet"/>				
+		<link href="../css/estilos.css" rel="stylesheet"/>
+		
+		<style>		
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul id="menu">
+					<li>
+						Inicio
+					</li>
+					<li>
+						Productos
+					</li>
+					<li>
+						Blog
+					</li>
+					<li>
+						Acerca
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div id="formulario">
+				<form action="/contactar" method="post">
+					<div>
+					<label for="name">Nombre:</label>
+					<input id="name" type="text" name="name" />
+					</div>
+					
+					<div>
+					<label for="email">Email:</label>
+					<input id="emailContacto" type="email" name="email" required />
+					</div>
+					
+					<div>
+					<label for="url">URL:</label>
+					<input id="url" type="url" name="url" pattern="http(s)?://[a-zA-Z]+.[a-zA-Z]+" />
+					</div>
+					
+					<div>
+					<label for="edad">Edad:</label>
+					<input id="edad" type="number" min="18" max="90" step="5" name="edad" />
+					</div> 
+					
+					<div>
+					<label for="dudas">Dudas:</label>
+					<textarea name="dudas" rows="4" cols="50">Déjanos tus dudas</textarea>
+					</div>
+					
+					<input type="submit" value="enviar">
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div id="derechos">
+				<span>MiPagina</span> derechos reservados
+				<div id="socialMedia">
+					<img src="imagenes/googleplus.png">		
+					<img src="imagenes/facebook.png">		
+					<img src="imagenes/twitter.png">		
+					<img src="imagenes/youtube.png">		
+				</div>	
+			</div>		
+			<div id="suscription">
+				<form action="/suscribir" method="post">
+					<label for="email">Suscribete:</label>
+					<input id="email" type="text" name="email" />
+					<input type="submit" value="enviar">					
+				</form>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
